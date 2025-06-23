@@ -55,7 +55,7 @@ const LoginForm = () => {
       alert(data.message);
       
       if (data.access_token) {
-        router.push('/profile');
+        router.push('/');
       }
     } catch (error) {
       alert('Ada gangguan server. Coba lagi');
