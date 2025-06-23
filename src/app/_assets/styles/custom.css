@@ -1,0 +1,107 @@
+.bg-primary {
+  background-color: #09141a;
+}
+.bg-primary-gradient {
+  background: #1F4247;
+  background: radial-gradient(circle at 90% top, #1F4247 0%, #0D1D23 55%, #09141A 100%);
+}
+
+.input-auth-primary {
+  outline: none;
+  background-color: #ffffff06;
+  font-size: 13px;
+  border: 1px solid transparent;
+  line-height: 0;
+}
+.input-auth-primary:focus {
+  border: 1px solid #ffffff22;
+}
+.input-auth-primary::placeholder {
+  font-size: 13px;
+}
+.icon-container {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 18px;
+  width: max-content;
+  height: max-content;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.input-about-primary {
+  outline: none;
+  background-color: #d9d9d906;
+  font-size: 13px;
+  line-height: 0;
+  border: 1px solid #ffffff22;
+  text-align: end;
+}
+.btn-select {
+  outline: none;
+  background-color: #d9d9d906;
+  font-size: 13px;
+  border: 1px solid #ffffff22;
+  text-align: end;
+}
+.react-datepicker-wrapper {
+  display: flex !important;
+  flex: 1 1 0%;
+}
+.rt-SelectTrigger {
+  display: flex !important;
+  justify-content: flex-end !important;
+  height: 37px !important;
+  outline: none !important;
+  background-color: #d9d9d906 !important;
+  font-size: 13px !important;
+  border: 1px solid #ffffff22 !important;
+  text-align: end !important;
+  padding: 10px 20px !important;
+  flex: 1 1 0% !important;
+  color: #ffffff !important;
+  border-radius: .5rem !important;
+  -webkit-border-radius: .5rem !important;
+  -moz-border-radius: .5rem !important;
+  -ms-border-radius: .5rem !important;
+  -o-border-radius: .5rem !important;
+}
+.rt-SelectTrigger:where(.rt-variant-surface):where([data-placeholder]) :where(.rt-SelectTriggerInner) {
+  color: #ffffff4d !important;
+}
+
+.btn-submit-form {
+  background: #62CDCB;
+  background: linear-gradient(51deg, #62CDCB 0%, #4599DB 100%);
+  box-shadow: 0 10px 15px -3px #62cdcb99, 0 2px 6px 0 #4599DB99;
+}
+.btn-submit-form:disabled {
+  background: linear-gradient(51deg, #62CDCB 0%, #4599DB 100%);
+  box-shadow: none;
+  opacity: .5;
+}
+
+.gold-gradient {
+  background: #94783E;
+  background: linear-gradient(29deg, #94783E 0%, #F3EDA6 20%, #F8FAE5 35%, #FFE2BE 50%, #D5BE88 65%, #F8FAE5 85%, #D5BE88 100%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.underline-gold-gradient {
+  position: relative;
+}
+.underline-gold-gradient::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(29deg, #94783E 0%, #F3EDA6 20%, #F8FAE5 35%, #FFE2BE 50%, #D5BE88 65%, #F8FAE5 85%, #D5BE88 100%);
+}
