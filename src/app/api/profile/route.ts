@@ -40,16 +40,16 @@ export async function POST(request: NextRequest) {
 
   try {
     // get data
-    const resGetProfile = await fetch('https://techtest.youapp.ai/api/getProfile', {
-      method: 'GET',
-      headers: {
-        'x-access-token': token,
-        'Content-Type': 'application/json',
-      }
-    });
-    const dataGetProfile = await resGetProfile.json();
-    const dataInterests = dataGetProfile.data.interests
-    dataInterests.push(...body.interests);
+    // const resGetProfile = await fetch('https://techtest.youapp.ai/api/getProfile', {
+    //   method: 'GET',
+    //   headers: {
+    //     'x-access-token': token,
+    //     'Content-Type': 'application/json',
+    //   }
+    // });
+    // const dataGetProfile = await resGetProfile.json();
+    // const dataInterests = dataGetProfile.data.interests
+    // dataInterests.push(...body.interests);
 
     // post data
     const resCreateProfile = await fetch('https://techtest.youapp.ai/api/createProfile', {
@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
         'zodiac': body.zodiac,
         'height': body.height,
         'weight': body.weight,
-        'interests': dataInterests
+        // 'interests': dataInterests
       })
     });
     const dataCreateProfile = await resCreateProfile.json();

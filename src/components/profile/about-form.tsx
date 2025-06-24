@@ -96,7 +96,7 @@ const AboutForm = ({dataFetched}: FetchedDataProps) => {
     }
   };
   const handleSaveAbout = async () => {
-    const arrayDataInterest = ['code', 'volley'];
+    // const arrayDataInterest = ['code', 'volley'];
 
     try {
       const res = await fetch('/api/profile', {
@@ -112,7 +112,7 @@ const AboutForm = ({dataFetched}: FetchedDataProps) => {
           'zodiac': zodiac,
           'height': Number(height),
           'weight': Number(weight),
-          'interests': arrayDataInterest
+          // 'interests': arrayDataInterest
         })
       });
       const data = await res.json();

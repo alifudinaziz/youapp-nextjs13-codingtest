@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { BtnIcon } from "@/components/common/button";
 import AboutForm from "@/components/profile/about-form";
-import InterestForm from "@/components/profile/interest-form";
+import AboutInterestForm from "@/components/profile/interest-form";
 
 interface initFetchGet {
   username: string,
@@ -53,14 +53,17 @@ const ProfilePage = () => {
       <div className="mt-[28px] rounded-2xl h-[190px] w-full bg-[#162329] flex items-end px-[13px] py-[16px]">
         <p className="text-white font-bold text-base">@{fetchInitData?.username},</p>
       </div>
-      <div className="flex flex-col gap-[18px] mt-6">
-        {fetchInitData ? 
+      {fetchInitData ? 
+        <div className="flex flex-col gap-[18px] mt-6">
           <AboutForm dataFetched={fetchInitData} />
-        :
+          <AboutInterestForm />
+        </div>
+      :
+        <div className="flex flex-col gap-[18px] mt-6">
           <div className="w-full min-h-[120px] h-full rounded-[14px] bg-white/50 pl-[27px] pt-[13px] pr-[14px] pb-[23px] animate-pulse"></div>
-        }
-        <InterestForm />
-      </div>
+          <div className="w-full min-h-[120px] h-full rounded-[14px] bg-white/50 pl-[27px] pt-[13px] pr-[14px] pb-[23px] animate-pulse"></div>
+        </div>
+      }
     </>
   )
 };

@@ -84,6 +84,14 @@
   box-shadow: none;
   opacity: .5;
 }
+.btn-blue-gradient {
+  background: #AADAFF;
+  background: linear-gradient(51deg, #ABFFFD 0%, #4599DB 80%, #AADAFF 100%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .gold-gradient {
   background: #94783E;
@@ -104,4 +112,19 @@
   width: 100%;
   height: 1px;
   background: linear-gradient(29deg, #94783E 0%, #F3EDA6 20%, #F8FAE5 35%, #FFE2BE 50%, #D5BE88 65%, #F8FAE5 85%, #D5BE88 100%);
+}
+
+.rt-BaseDialogScrollPadding:has(.modal-full-page) {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.modal-full-page {
+  max-width: 512px !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  min-height: 100svh !important;
+  height: 100% !important;
 }
